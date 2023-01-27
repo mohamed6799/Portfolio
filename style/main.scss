@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --mainBackgroundColorDark:#111;
+    --mainBackgroundColorLight:#eeeeee;
+    --OneColor:#ff433a;
+    --TwoColor:#ff6f0e;
+    --ThreeColor:#27947e;
+    --FourColor:#0853be;
+    --FiveColor:#ff56ba;
+    
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.portfolio{
+    display: flex;
+    transition:background 0.5s ease;
+    height: 100vh;
+    background-color:var(--mainBackgroundColorDark);
+    color:#eeeeee;
+
+    .nav{
+        width:20%;
+        border:1px solid red;
+        padding: 30px 10px;
+        text-align: center;
+        img{
+            width: 60%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 5px solid var(--TwoColor);
+            border-radius: 50%;
+            
+        }
+       
+        .menu{
+            margin-top: 50px;
+            
+            ul{
+                width: 60%;
+                margin: auto;
+                li{
+                    border-bottom: 0.1px solid rgba(210, 210, 210 , 0.2);
+                    padding: 15px 0;
+                    text-align: center;
+                    a{  
+                        transition: 0.3s ease;
+                        display: inline-block;
+                        width: 190px;
+                        text-align: left;
+                        color:#eeeeee;
+                        i{
+                            width:20px;
+                            text-align: center;
+                            margin:0 10px 0 20px;
+                        }
+                        
+                    }
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .content{
+        width: 80%;
+        border:1px solid blue;
+        overflow-y: auto;;
+        overflow-x: hidden;
+        position: relative;
+        .settings{
+            display: flex;
+            transition: 0.5s ease-in-out;
+            align-items: center;
+            position:fixed;
+            top: 20px;
+            right:-175px;
+            overflow: hidden;
+            .icon{
+                margin-right: 25px;
+                button{
+                    cursor: pointer;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    border: none;
+                    outline: none;
+                    
+                }
+                i{
+                    transition: 0.3s ease;
+                    display: block;
+                    text-align: center;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    padding: 9px ;
+                    color:#eeeeee;
+                    background-color: #222;
+                    border-radius: 50%;
+                    
+                    
+                }  
+                }
+                
+            }
+            #checksettings:checked{
+                &~.settings{
+                    right: 20px;
+                    .icon{
+                        .input{
+                            label{
+                                #themes{
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+
+            .color{
+                padding: 10px;
+                border-radius: 5px;
+                background-color:#222 ;
+                overflow: hidden;
+                h5{
+                    margin-bottom: 10px;
+                    color:#eeeeee;
+                }
+                .buttons{
+                    button{
+                        cursor: pointer;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        border: none;
+                        outline: none;
+                        margin-right: 2px;
+                    }
+                }
+            }
+
+        }
+    }
+    #checkdark:checked{
+        &~.portfolio{
+            background-color:var(--mainBackgroundColorLight );
+            color:black;
+            .nav{
+                .menu{
+                    ul{
+                        li{
+                            border-bottom-color: #222;
+                            a{
+                                color:black;
+                                &:hover{
+                                    color: var(--TwoColor);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .settings{
+                
+                .input2{
+                    label{
+                        #whiteLight{
+                            display: block;
+                        }
+                        #whitedark{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    #checkdark:not(:checked){
+        &~.portfolio{
+            .settings{
+                .input2{
+                    label{
+                        #whiteLight{
+                            display: none;
+                        }
+                        #whitedark{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+

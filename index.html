@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <input type="checkbox" id="checkdark" style="display: none;">
+    <div class="portfolio">
+        <div class="nav">
+            <img src="img/person3.3.jpg" alt="">
+            <h1>M7md</h1>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href=""><i class="fa-solid fa-house" ></i> Home</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-user" ></i>About</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-screwdriver-wrench" ></i>Skills</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-comments"></i>Contact</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-diagram-project"></i>Experiences</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-graduation-cap"></i>Certifications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <input type="checkbox" id="checksettings" style="display: none;" >
+            <div class="settings">
+                <div class="icon">
+                    <div class="input">
+                        <label for="checksettings">
+                            <i class="fa-solid fa-gear" id="themes"></i>
+                        </label>
+                    </div>
+                    <div class="input2">
+                        <label for="checkdark">
+                            <i class="fa-solid fa-sun" id="whitedark"></i>
+                            <i class="fa-solid fa-moon" id="whiteLight" ></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="color">
+                    <h5>Theme Colors</h5>
+                    <div class="buttons">
+                        <button class="colorRed" style="background-color: var(--OneColor);"></button>
+                        <button class="coloryellow" style="background-color:var(--TwoColor); ;"></button>
+                        <button class="colorgreen" style="background-color: var(--ThreeColor);;"></button>
+                        <button class="colorblue" style="background-color: var(--FourColor);;"></button>
+                        <button class="colorbgrey" style="background-color: var(--FiveColor);;"></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item" style="height: 100vh;"></div>
+            <div class="item" style="height: 100vh;"></div>
+            <div class="item" style="height: 100vh;"></div>
+            <div class="item" style="height: 100vh;"></div>
+        </div>
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>

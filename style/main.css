@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root {
+  --mainBackgroundColorDark:#111;
+  --mainBackgroundColorLight:#eeeeee;
+  --OneColor:#ff433a;
+  --TwoColor:#ff6f0e;
+  --ThreeColor:#27947e;
+  --FourColor:#0853be;
+  --FiveColor:#ff56ba;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio {
+  display: flex;
+  transition: background 0.5s ease;
+  height: 100vh;
+  background-color: var(--mainBackgroundColorDark);
+  color: #eeeeee;
+}
+.portfolio .nav {
+  width: 20%;
+  border: 1px solid red;
+  padding: 30px 10px;
+  text-align: center;
+}
+.portfolio .nav img {
+  width: 60%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 5px solid var(--TwoColor);
+  border-radius: 50%;
+}
+.portfolio .nav .menu {
+  margin-top: 50px;
+}
+.portfolio .nav .menu ul {
+  width: 60%;
+  margin: auto;
+}
+.portfolio .nav .menu ul li {
+  border-bottom: 0.1px solid rgba(210, 210, 210, 0.2);
+  padding: 15px 0;
+  text-align: center;
+}
+.portfolio .nav .menu ul li a {
+  transition: 0.3s ease;
+  display: inline-block;
+  width: 190px;
+  text-align: left;
+  color: #eeeeee;
+}
+.portfolio .nav .menu ul li a i {
+  width: 20px;
+  text-align: center;
+  margin: 0 10px 0 20px;
+}
+.portfolio .nav .menu ul li:last-child {
+  border-bottom: none;
+}
+.portfolio .content {
+  width: 80%;
+  border: 1px solid blue;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+.portfolio .content .settings {
+  display: flex;
+  transition: 0.5s ease-in-out;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: -175px;
+  overflow: hidden;
+}
+.portfolio .content .settings .icon {
+  margin-right: 25px;
+}
+.portfolio .content .settings .icon button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+.portfolio .content .settings .icon i {
+  transition: 0.3s ease;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 9px;
+  color: #eeeeee;
+  background-color: #222;
+  border-radius: 50%;
+}
+.portfolio .content #checksettings:checked ~ .settings {
+  right: 20px;
+}
+.portfolio .content #checksettings:checked ~ .settings .icon .input label #themes {
+  transform: rotate(90deg);
+}
+.portfolio .content .color {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #222;
+  overflow: hidden;
+}
+.portfolio .content .color h5 {
+  margin-bottom: 10px;
+  color: #eeeeee;
+}
+.portfolio .content .color .buttons button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-right: 2px;
+}
+
+#checkdark:checked ~ .portfolio {
+  background-color: var(--mainBackgroundColorLight);
+  color: black;
+}
+#checkdark:checked ~ .portfolio .nav .menu ul li {
+  border-bottom-color: #222;
+}
+#checkdark:checked ~ .portfolio .nav .menu ul li a {
+  color: black;
+}
+#checkdark:checked ~ .portfolio .nav .menu ul li a:hover {
+  color: var(--TwoColor);
+}
+#checkdark:checked ~ .portfolio .settings .input2 label #whiteLight {
+  display: block;
+}
+#checkdark:checked ~ .portfolio .settings .input2 label #whitedark {
+  display: none;
+}
+
+#checkdark:not(:checked) ~ .portfolio .settings .input2 label #whiteLight {
+  display: none;
+}
+#checkdark:not(:checked) ~ .portfolio .settings .input2 label #whitedark {
+  display: block;
+}/*# sourceMappingURL=main.css.map */
