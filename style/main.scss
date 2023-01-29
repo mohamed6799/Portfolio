@@ -7,15 +7,15 @@
     --ThreeColor:#27947e;
     --FourColor:#0853be;
     --FiveColor:#ff56ba;
-    
 }
 *{
     margin:0;
     padding: 0;
+    scroll-behavior: smooth !important;
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     font-family: 'Poppins', sans-serif;
 }
 .portfolio{
@@ -24,10 +24,8 @@
     height: 100vh;
     background-color:var(--mainBackgroundColorDark);
     color:#eeeeee;
-
     .nav{
-        width:20%;
-        border:1px solid red;
+        width:17%;
         padding: 30px 10px;
         text-align: center;
         img{
@@ -36,32 +34,37 @@
             margin-bottom: 10px;
             border: 5px solid var(--TwoColor);
             border-radius: 50%;
+            opacity: 0;
             
         }
-       
+        h1{
+            transform: translateY(-100px);
+        }
+        
         .menu{
+            transform: translatY(-100px);
             margin-top: 50px;
-            
             ul{
-                width: 60%;
-                margin: auto;
+                width: 100%;
+                overflow: hidden;
+                text-align: left;
+                padding-left: 20px;
                 li{
                     border-bottom: 0.1px solid rgba(210, 210, 210 , 0.2);
                     padding: 15px 0;
-                    text-align: center;
                     a{  
-                        transition: 0.3s ease;
                         display: inline-block;
-                        width: 190px;
                         text-align: left;
+                        font-size: 15px;
+                        font-weight: bold;
                         color:#eeeeee;
                         i{
                             width:20px;
                             text-align: center;
                             margin:0 10px 0 20px;
                         }
-                        
                     }
+                    .active{font-size: 15px;}
                     &:last-child{
                         border-bottom: none;
                     }
@@ -69,11 +72,8 @@
             }
         }
     }
-
-
-
     .content{
-        width: 80%;
+        width: 83%;
         border:1px solid blue;
         overflow-y: auto;;
         overflow-x: hidden;
@@ -95,7 +95,6 @@
                     border-radius: 50%;
                     border: none;
                     outline: none;
-                    
                 }
                 i{
                     transition: 0.3s ease;
@@ -107,11 +106,8 @@
                     color:#eeeeee;
                     background-color: #222;
                     border-radius: 50%;
-                    
-                    
                 }  
                 }
-                
             }
             #checksettings:checked{
                 &~.settings{
@@ -120,15 +116,13 @@
                         .input{
                             label{
                                 #themes{
-                                    transform: rotate(90deg);
+                                    transform: rotate(-90deg);
                                 }
                             }
                         }
                     }
                 }
             }
-            
-
             .color{
                 padding: 10px;
                 border-radius: 5px;
@@ -163,10 +157,7 @@
                         li{
                             border-bottom-color: #222;
                             a{
-                                color:black;
-                                &:hover{
-                                    color: var(--TwoColor);
-                                }
+                                color:black ;
                             }
                         }
                     }
@@ -190,6 +181,18 @@
     }
     #checkdark:not(:checked){
         &~.portfolio{
+            .nav{
+                .menu{
+                    ul{
+                        li{
+                            border-bottom-color: #222;
+                            a{
+                                color:#eeeeee ;
+                            }
+                        }
+                    }
+                }
+            }
             .settings{
                 .input2{
                     label{

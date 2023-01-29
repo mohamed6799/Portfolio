@@ -1,0 +1,101 @@
+@media screen and (max-width:1000px) {
+    .portfolio{
+        .nav{
+            img{
+                width: 90% !important;
+            };
+            .menu{
+                
+                ul{
+                    padding-left: 0 !important;
+                    li{
+                        a{
+                            i{
+                                margin: 0 10px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:750px) {
+    .portfolio{
+        .nav{
+            h1{
+                font-size: 22px;
+            }
+            .menu{
+                
+                ul{
+                    
+                    li{
+                        a{
+                            i{
+                                margin: 0 10px 0 0 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            .settings{
+
+                .icon{
+                    margin-right: 10px !important;
+                }
+            }
+            #checksettings:checked{
+                &~.settings{
+                    right:2px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:655px) {
+    .portfolio{
+        .nav{
+            img{
+                display: none;
+            }
+            h1{
+                transform: translateY(0) !important;
+                font-size: 14px;
+            }
+            padding: 30px 5px !important;
+            width: auto !important;
+            .menu{
+                transform: translateY(0) !important;
+                margin-top: 100px !important;
+                ul{
+                    padding: 0 !important;
+                    li{
+                        padding: 10px 0 !important;
+                        text-align: center;
+                        a{
+                            display: block;
+                            margin: 0 !important;
+                            height: auto !important;
+                            span{
+                                display: none;
+                            }
+                            i{
+                               margin: 0 !important;
+                               display: inline-block;
+                               font-size: 25px;
+                               width: auto !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            width: 100% !important;
+        }
+    }
+}

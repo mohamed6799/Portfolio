@@ -1,1 +1,66 @@
-/*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 1000px) {
+  .portfolio .nav img {
+    width: 90% !important;
+  }
+  .portfolio .nav .menu ul {
+    padding-left: 0 !important;
+  }
+  .portfolio .nav .menu ul li a i {
+    margin: 0 10px !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .portfolio .nav h1 {
+    font-size: 22px;
+  }
+  .portfolio .nav .menu ul li a i {
+    margin: 0 10px 0 0 !important;
+  }
+  .portfolio .content .settings .icon {
+    margin-right: 10px !important;
+  }
+  .portfolio .content #checksettings:checked ~ .settings {
+    right: 2px !important;
+  }
+}
+@media screen and (max-width: 655px) {
+  .portfolio .nav {
+    padding: 30px 5px !important;
+    width: auto !important;
+  }
+  .portfolio .nav img {
+    display: none;
+  }
+  .portfolio .nav h1 {
+    transform: translateY(0) !important;
+    font-size: 14px;
+  }
+  .portfolio .nav .menu {
+    transform: translateY(0) !important;
+    margin-top: 100px !important;
+  }
+  .portfolio .nav .menu ul {
+    padding: 0 !important;
+  }
+  .portfolio .nav .menu ul li {
+    padding: 10px 0 !important;
+    text-align: center;
+  }
+  .portfolio .nav .menu ul li a {
+    display: block;
+    margin: 0 !important;
+    height: auto !important;
+  }
+  .portfolio .nav .menu ul li a span {
+    display: none;
+  }
+  .portfolio .nav .menu ul li a i {
+    margin: 0 !important;
+    display: inline-block;
+    font-size: 25px;
+    width: auto !important;
+  }
+  .portfolio .content {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=media.css.map */

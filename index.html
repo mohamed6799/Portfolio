@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/all.min.css">
     <title>Portfolio</title>
 </head>
@@ -18,22 +18,22 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href=""><i class="fa-solid fa-house" ></i> Home</a>
+                        <a href="#item" class="linkItem active"><i class="fa-solid fa-house" ></i> <span>Home</span></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-user" ></i>About</a>
+                        <a href="#item2" class="linkItem "><i class="fa-solid fa-user" ></i><span>About</span></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-screwdriver-wrench" ></i>Skills</a>
+                        <a href="#item3" class="linkItem "><i class="fa-solid fa-screwdriver-wrench" ></i><span>Skills</span></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-comments"></i>Contact</a>
+                        <a href="#item4" class="linkItem "><i class="fa-solid fa-comments"></i><span>Contact</span></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-diagram-project"></i>Experiences</a>
+                        <a href="#item5" class="linkItem "><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-graduation-cap"></i>Certifications</a>
+                        <a href="#item6" class="linkItem "><i class="fa-solid fa-graduation-cap"></i><span>Courses</span></a>
                     </li>
                 </ul>
             </div>
@@ -59,19 +59,20 @@
                 <div class="color">
                     <h5>Theme Colors</h5>
                     <div class="buttons">
-                        <button class="colorRed" style="background-color: var(--OneColor);"></button>
-                        <button class="coloryellow" style="background-color:var(--TwoColor); ;"></button>
-                        <button class="colorgreen" style="background-color: var(--ThreeColor);;"></button>
-                        <button class="colorblue" style="background-color: var(--FourColor);;"></button>
-                        <button class="colorbgrey" style="background-color: var(--FiveColor);;"></button>
+                        <button class="colorbutton activeColor" style="background-color: var(--OneColor);"></button>
+                        <button class="colorbutton" style="background-color:var(--TwoColor); ;"></button>
+                        <button class="colorbutton" style="background-color: var(--ThreeColor);;"></button>
+                        <button class="colorbutton" style="background-color: var(--FourColor);;"></button>
+                        <button class="colorbutton" style="background-color: var(--FiveColor);;"></button>
                     </div>
                 </div>
-
             </div>
-            <div class="item" style="height: 100vh;"></div>
-            <div class="item" style="height: 100vh;"></div>
-            <div class="item" style="height: 100vh;"></div>
-            <div class="item" style="height: 100vh;"></div>
+            <div class="item" id="item" style="height: 100vh; background-color: red;"></div>
+            <div class="item" id="item2" style="height: 100vh;background-color: blue;"></div>
+            <div class="item" id="item3" style="height: 100vh;background-color: yellow"></div>
+            <div class="item" id="item4" style="height: 100vh; background-color: green"></div>
+            <div class="item" id="item5" style="height: 100vh;background-color: orange"></div>
+            <div class="item" id="item6" style="height: 100vh; background-color:blueviolet"></div>
         </div>
     </div>
     <script src="script/main.js"></script>
