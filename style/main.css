@@ -16,13 +16,12 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: background 0.3s ease;
   font-family: "Poppins", sans-serif;
 }
 
 .portfolio {
   display: flex;
-  transition: background 0.5s ease;
   height: 100vh;
   background-color: var(--mainBackgroundColorDark);
   color: #eeeeee;
@@ -31,59 +30,139 @@
   width: 17%;
   padding: 30px 10px;
   text-align: center;
+  background-color: #1b1b1b;
 }
 .portfolio .nav img {
-  width: 60%;
+  width: 70%;
   border-radius: 50%;
   margin-bottom: 10px;
   border: 5px solid var(--TwoColor);
   border-radius: 50%;
   opacity: 0;
 }
-.portfolio .nav h1 {
-  transform: translateY(-100px);
-}
-.portfolio .nav .menu {
-  transform: translatY(-100px);
+.portfolio .nav .navbar .menu {
   margin-top: 50px;
 }
-.portfolio .nav .menu ul {
+.portfolio .nav .navbar .menu ul {
   width: 100%;
   overflow: hidden;
   text-align: left;
-  padding-left: 20px;
+  padding: 0 20px;
 }
-.portfolio .nav .menu ul li {
+.portfolio .nav .navbar .menu ul li {
   border-bottom: 0.1px solid rgba(210, 210, 210, 0.2);
   padding: 15px 0;
 }
-.portfolio .nav .menu ul li a {
+.portfolio .nav .navbar .menu ul li a {
   display: inline-block;
   text-align: left;
   font-size: 15px;
   font-weight: bold;
   color: #eeeeee;
 }
-.portfolio .nav .menu ul li a i {
+.portfolio .nav .navbar .menu ul li a i {
   width: 20px;
   text-align: center;
   margin: 0 10px 0 20px;
 }
-.portfolio .nav .menu ul li .active {
+.portfolio .nav .navbar .menu ul li .active {
   font-size: 15px;
 }
-.portfolio .nav .menu ul li:last-child {
+.portfolio .nav .navbar .menu ul li:last-child {
   border-bottom: none;
 }
 .portfolio .content {
   width: 83%;
-  border: 1px solid blue;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
 }
+.portfolio .content .item {
+  padding: 0 60px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.portfolio .content .item .content1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.portfolio .content .item .content1 .img {
+  width: 33%;
+  text-align: center;
+  padding: 32px 0;
+  position: relative;
+}
+.portfolio .content .item .content1 .img img {
+  width: 80%;
+}
+.portfolio .content .item .content1 .img .before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  border: 10px solid;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+}
+.portfolio .content .item .content1 .img .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  border: 10px solid;
+  border-bottom-color: transparent !important;
+  border-right-color: transparent !important;
+}
+.portfolio .content .item .content1 .title {
+  width: 62%;
+  padding: 0 10px;
+  transition: 0.3s ease;
+}
+.portfolio .content .item .content1 .title h1 {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.portfolio .content .item .content1 .title h1:nth-of-type(2) {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.portfolio .content .item .content1 .title p {
+  margin-bottom: 50px;
+  font-size: 17px;
+  text-align: justify;
+}
+.portfolio .content .item .content1 .title button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+}
+.portfolio .content .item .content1 .title button a {
+  color: white;
+}
+.portfolio .content .item .content1 .title button:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
 .portfolio .content .settings {
   display: flex;
+  z-index: 1000;
   transition: 0.5s ease-in-out;
   align-items: center;
   position: fixed;
@@ -142,9 +221,13 @@
 #checkdark:checked ~ .portfolio {
   background-color: var(--mainBackgroundColorLight);
   color: black;
+  transform: 0.2s ease;
+}
+#checkdark:checked ~ .portfolio .nav {
+  background-color: #dbdbdb;
 }
 #checkdark:checked ~ .portfolio .nav .menu ul li {
-  border-bottom-color: #222;
+  border-bottom-color: #1b1b1b;
 }
 #checkdark:checked ~ .portfolio .nav .menu ul li a {
   color: black;
@@ -157,7 +240,7 @@
 }
 
 #checkdark:not(:checked) ~ .portfolio .nav .menu ul li {
-  border-bottom-color: #222;
+  border-bottom-color: #eeeeee;
 }
 #checkdark:not(:checked) ~ .portfolio .nav .menu ul li a {
   color: #eeeeee;

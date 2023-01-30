@@ -1,13 +1,36 @@
+@media screen and (max-width:1150px) {
+    .portfolio{
+        .content{
+            border: 1px solid red !important;
+            .item{
+                padding: 0 20px !important;
+                .content1{
+                    .img{
+                        width: 30% !important;
+                    }
+                    .title{
+                        width: 65% !important;
+                        h1:nth-of-type(1){
+                            font-size: 32px;
+                        }
+                        h1:nth-of-type(2){
+                            font-size: 29px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:1000px) {
     .portfolio{
         .nav{
             img{
                 width: 90% !important;
             };
-            .menu{
-                
+            .menu{ 
                 ul{
-                    padding-left: 0 !important;
+                    padding: 0 !important;
                     li{
                         a{
                             i{
@@ -16,6 +39,54 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@media screen and (max-width:950px) {
+    .portfolio{
+        .content{
+            .item{
+                padding: 20px 5px !important;
+                height: auto !important;
+                .content1{
+                    display: block !important;
+                    .img{
+                        display: block;
+                        margin-bottom: 20px !important;
+                        width: 40% !important;
+                        margin: auto;
+                        padding: 25px 0 !important;
+                        .after  , .before{
+                            border-style: solid;
+                            width: 50% !important;
+                            height: 50% !important;
+                        }
+                        img{
+                            width: 85% !important;
+                        }
+                    }
+                    .title{
+                        width: 100% !important;
+                        h1{
+                        &:nth-of-type(1){
+                            font-size: 35px !important;
+                        }
+                        &:nth-of-type(2){
+                            font-size: 28px !important;
+                        }
+                    }
+                    p{
+                        margin-bottom: 0 !important;
+                    }
+                    button{
+                        display: none;
+                    }
+
+                    }
+                    
+                }
+
             }
         }
     }
@@ -29,7 +100,6 @@
             .menu{
                 
                 ul{
-                    
                     li{
                         a{
                             i{
@@ -55,39 +125,39 @@
         }
     }
 }
-
 @media screen and (max-width:655px) {
     .portfolio{
         .nav{
+            padding: 30px 5px !important;
+            width: auto !important;
             img{
                 display: none;
             }
-            h1{
+            .navbar{
                 transform: translateY(0) !important;
-                font-size: 14px;
-            }
-            padding: 30px 5px !important;
-            width: auto !important;
-            .menu{
-                transform: translateY(0) !important;
-                margin-top: 100px !important;
-                ul{
-                    padding: 0 !important;
-                    li{
-                        padding: 10px 0 !important;
-                        text-align: center;
-                        a{
-                            display: block;
-                            margin: 0 !important;
-                            height: auto !important;
-                            span{
-                                display: none;
-                            }
-                            i{
-                               margin: 0 !important;
-                               display: inline-block;
-                               font-size: 25px;
-                               width: auto !important;
+                h1{
+                    font-size: 12px;
+                }
+                .menu{
+                    margin-top: 100px !important;
+                    ul{
+                        padding: 0 !important;
+                        li{
+                            padding: 15px 0 !important;
+                            text-align: center;
+                            a{
+                                display: block;
+                                margin: 0 !important;
+                                height: auto !important;
+                                span{
+                                    display: none;
+                                }
+                                i{
+                                   margin: 0 !important;
+                                   display: inline-block;
+                                   font-size: 20px;
+                                   width: auto !important;
+                                }
                             }
                         }
                     }
@@ -96,6 +166,99 @@
         }
         .content{
             width: 100% !important;
+            .item{
+                .content1{
+                    .img{
+                        width: 60% !important;
+                    }
+                    .title{
+                        h1{
+                            &:nth-of-type(1){
+                                font-size: 30px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:620px) {
+    .portfolio{
+        .content{
+            .item{
+                padding: 20px 5px !important;
+                height: auto !important;
+                .content1{
+                    .title{
+                        h1{
+                            &:nth-of-type(1){
+                                font-size: 25px !important;
+                            }
+                            &:nth-of-type(2){
+                                font-size: 23px !important;
+                            }
+                        }
+                        p{
+                            font-size: 15px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .portfolio{
+        .content{
+            .item{
+                .content1{
+                    .img{
+                        width: 95% !important;
+                    }
+                    .title{
+                        h1{
+                            span{
+                                display: block;
+                                margin-left: 30px !important;
+                            }
+                            &:nth-of-type(1){
+                                font-size: 27px !important;
+                            }
+                            &:nth-of-type(2){
+                                font-size:23px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:350px) {
+    .portfolio{
+        .content{
+            .item{
+                .content1{
+                    .title{
+                        h1{
+                            span{
+                                display: block;
+                                margin-left: 10px !important;
+                            }
+                            &:nth-of-type(1){
+                                font-size: 23px !important;
+                            }
+                            &:nth-of-type(2){
+                                font-size:19px !important;
+                            }
+                        }
+                        p{
+                            font-size: 13px !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -1,44 +1,45 @@
 let settingsBut = document.querySelectorAll(".content .settings .buttons button");
 let navItem = document.querySelectorAll(".menu ul li a");
-let borderImg = document.querySelectorAll(".nav img")[0];
-let h1 = document.querySelectorAll(".nav h1")[0];
+let navbar = document.querySelectorAll(".nav .navbar")[0];
+let borderImg = document.querySelectorAll(".nav  img")[0];
+let h1 = document.querySelectorAll(".nav  h1")[0];
 let menu = document.querySelectorAll(".nav .menu")[0];
 let content = document.querySelectorAll(".portfolio .content")[0];
 let item = document.querySelectorAll(".portfolio .content .item");
 let darkmode = document.getElementById("checkdark");
 let buttondark = document.querySelectorAll(".input2 label")[0];
-
-
+let spanNameH1 = document.querySelectorAll(".content .content1 .title h1 span");
+let buttonHome = document.querySelectorAll(".content .content1 .title button")[0];
+ let contentImgborder = document.querySelectorAll(".content .content1 .img div");
+ opacityImg()
 function opacityImg(){
     if(content.scrollTop > item[0].scrollHeight/2){
-        borderImg.style.cssText = `
+        let colorBorder="";
+        settingsBut.forEach(e=>{
+            if(e.classList == "colorbutton activeColor"){
+                colorBorder = e.style.backgroundColor;
+            }
+        })
+        borderImg.style.cssText=`
         opacity:1;
-        transition:0.5s ease-out;
+        transition:0.3s ease;
+        border:5px solid ${colorBorder};
     `;
-        h1.style.cssText = `
+    navbar.style.cssText = `
+        transition:0.3s ease;
         transform:translateY(0);
-        transition:0.3s ease-out;
-    `;
-        menu.style.cssText = `
-        transform:translateY(0);
-        transition:0.3s ease-out;
     `;
     }else{
         borderImg.style.cssText = `
+        transition:0.3s ease;
         opacity:0;
-        transition:0.5s ease-out;
     `;
-        h1.style.cssText = `
-        transform:translateY(-100px);
-        transition:0.3s ease-out;
-    `;
-        menu.style.cssText = `
-        transform:translateY(-100px);
-        transition:0.3s ease-out;
-    `;        
+    navbar.style.cssText = `
+        transition:0.3s ease;
+        transform:translateY(-100px)
+    `;    
     }
 }
-
 
 buttondark.addEventListener("click",function(){
     if(darkmode.checked){
@@ -47,12 +48,14 @@ buttondark.addEventListener("click",function(){
                 e.style.color="#eeeeee"
             }
         })
+        
     }else{
         navItem.forEach(e=>{
             if(e.classList != "linkItem active"){
                 e.style.color="black"
             }
         })
+        
     }
 })
 
@@ -67,14 +70,10 @@ content.onscroll = function(){
     if(content.scrollTop < item[0].scrollHeight){
         shortactive(0)
         activeItemnav()
-        
     }
     else if(content.scrollTop < item[0].scrollHeight+item[1].scrollHeight){
         shortactive(1)
         activeItemnav();
-        
-        
-
     }
     else if(content.scrollTop < item[0].scrollHeight+item[1].scrollHeight+item[2].scrollHeight){
         shortactive(2)
@@ -83,17 +82,14 @@ content.onscroll = function(){
     else if(content.scrollTop < item[0].scrollHeight+item[1].scrollHeight+item[2].scrollHeight+item[3].scrollHeight){
         shortactive(3)
         activeItemnav()
-
     }
     else if(content.scrollTop < item[0].scrollHeight+item[1].scrollHeight+item[2].scrollHeight+item[3].scrollHeight+item[4].scrollHeight){
         shortactive(4)
         activeItemnav()
-
     }
     else if(content.scrollTop < item[0].scrollHeight+item[1].scrollHeight+item[2].scrollHeight+item[3].scrollHeight+item[4].scrollHeight+item[5].scrollHeight){
         shortactive(5)
         activeItemnav()
-
     }
 }
 
@@ -102,18 +98,43 @@ settingsBut.forEach(e=>{
         settingsBut.forEach(e=> e.classList.remove("activeColor"));
         e.classList.add("activeColor");
         activeColor(e)
-        }
-        activeColor(e)
+        opacityImg()
+    }
+    activeColor(e)
 })
 
 function activeColor(e){
     if(e.classList == "colorbutton activeColor"){
-        borderImg.style.border = `5px solid  ${e.style.backgroundColor}`;
+        borderImg.style.cssText = `
+        border:5px solid  ${e.style.backgroundColor};
+        transition:0.3s ease;
+        
+        `;
         navItem.forEach(m=>{
             if(m.classList == "linkItem active"){
-                m.style.color = `${e.style.backgroundColor}`
+                m.style.cssText = `
+                color:${e.style.backgroundColor};
+                transition:0.3s ease;
+                
+                `;
             }
         })
+        contentImgborder.forEach(m=> m.style.cssText = `
+        border-color:${e.style.backgroundColor};
+        transition:0.3s ease;
+        
+        `)
+        spanNameH1.forEach(m=> {
+            m.style.cssText = `
+            color:${e.style.backgroundColor};
+            transition:0.3s ease;
+            `})
+            buttonHome.style.cssText = `
+            background-color:${e.style.backgroundColor};
+            
+            `
+        
+
     }
 }
 
