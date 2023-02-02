@@ -1,10 +1,9 @@
 @media screen and (max-width:1150px) {
     .portfolio{
         .content{
-            border: 1px solid red !important;
             .item{
                 padding: 0 20px !important;
-                .content1{
+                .home{
                     .img{
                         width: 30% !important;
                     }
@@ -15,6 +14,25 @@
                         }
                         h1:nth-of-type(2){
                             font-size: 29px;
+                        }
+                    }
+                }
+                .courses{
+                    .units{
+                        .unit{
+                            .text_hover{
+                                h1{
+                                    margin-bottom: 5px !important;
+                                }
+                                .course{
+                                    width: 100% !important;
+                                    margin-bottom: 5px !important;
+                                }
+                                p{
+                                    font-size: 14px !important;
+                                    margin-bottom: 5px !important;
+                                }
+                            }
                         }
                     }
                 }
@@ -41,15 +59,42 @@
                 }
             }
         }
+        .content{
+            .item{
+                .courses{
+                    .units{
+                        .unit{
+                            .text_hover{
+                                h1{
+                                    font-size: 20px !important;
+                                    margin-bottom: 5px !important;
+                                }
+                                .course{
+                                    width: 100%;
+                                    margin-bottom: 2px !important;
+                                    i{
+                                        font-size:30px !important;
+                                    }
+                                }
+                                p{
+                                    font-size: 14px !important;
+                                    margin-bottom: 5px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width:950px) {
     .portfolio{
         .content{
             .item{
-                padding: 20px 5px !important;
                 height: auto !important;
-                .content1{
+                padding: 20px  !important;
+                .home{
                     display: block !important;
                     .img{
                         display: block;
@@ -86,6 +131,30 @@
                     }
                     
                 }
+                .projects , .courses{
+                    .units{
+                        .unit{
+                            width: 49% !important;
+                            .text_hover{
+                                h1{
+                                    font-size: 40px !important;
+                                    margin-bottom: 25px !important;
+                                }
+                                .course{
+                                    width: 70% !important;
+                                    margin-bottom: 10px !important;
+                                    i{
+                                        font-size:50px !important;
+                                    }
+                                }
+                                p{
+                                    font-size: 16px !important;
+                                    margin-bottom: 10px !important;
+                                }
+                            }
+                        }
+                    }
+                }
 
             }
         }
@@ -112,7 +181,6 @@
         }
         .content{
             .settings{
-
                 .icon{
                     margin-right: 10px !important;
                 }
@@ -120,6 +188,31 @@
             #checksettings:checked{
                 &~.settings{
                     right:2px !important;
+                }
+            }
+            .item{
+                .courses{
+                    .units{
+                        .unit{
+                            .text_hover{
+                                h1{
+                                    font-size: 30px !important;
+                                    margin-bottom: 15px !important;
+                                }
+                                .course{
+                                    width: 70% !important;
+                                    margin-bottom: 10px !important;
+                                    i{
+                                        font-size:40px !important;
+                                    }
+                                }
+                                p{
+                                    font-size: 14px !important;
+                                    margin-bottom: 10px !important;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -167,7 +260,7 @@
         .content{
             width: 100% !important;
             .item{
-                .content1{
+                .home{
                     .img{
                         width: 60% !important;
                     }
@@ -187,9 +280,8 @@
     .portfolio{
         .content{
             .item{
-                padding: 20px 5px !important;
-                height: auto !important;
-                .content1{
+                padding: 20px  !important;
+                .home{
                     .title{
                         h1{
                             &:nth-of-type(1){
@@ -204,6 +296,31 @@
                         }
                     }
                 }
+                .projects , .courses{
+                    .units{
+                        .unit{
+                            width: 100% !important;
+                            .text_hover{
+                                h1{
+                                    font-size: 40px !important;
+                                    margin-bottom: 20px !important;
+                                }
+                                .course{
+                                    width: 70% !important;
+    
+                                    margin-bottom: 10px !important;
+                                    i{
+                                        font-size:50px !important;
+                                    }
+                                }
+                                p{
+                                    font-size: 20px !important;
+                                    margin-bottom: 15px !important;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -212,7 +329,7 @@
     .portfolio{
         .content{
             .item{
-                .content1{
+                .home{
                     .img{
                         width: 95% !important;
                     }
@@ -231,6 +348,30 @@
                         }
                     }
                 }
+                .courses{
+                    .units{
+                        .unit{
+                            .text_hover{
+                                h1{
+                                    font-size: 30px !important;
+                                    margin-bottom: 10px !important;
+                                }
+                                .course{
+                                    width: 70% !important;
+    
+                                    margin-bottom: 10px !important;
+                                    i{
+                                        font-size:40px !important;
+                                    }
+                                }
+                                p{
+                                    font-size: 14px !important;
+                                    margin-bottom: 15px !important;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -239,7 +380,8 @@
     .portfolio{
         .content{
             .item{
-                .content1{
+                padding: 20px 5px !important;
+                .home{
                     .title{
                         h1{
                             span{
@@ -258,6 +400,42 @@
                         }
                     }
                 }
+                .projects , .courses{
+                    .head{
+                        h1{
+                            font-size: 25px !important;
+                        }
+                        .after , .before{
+                            width: 25px !important;
+                            
+                        }
+                    }
+                    .units{
+                        .unit{
+                            .text_hover{
+                                padding: 5px 10px !important;
+                                overflow: hidden !important;
+                                h1{
+                                    font-size: 25px !important;
+                                    margin-bottom: 10px !important;
+                                }
+                                .course{
+                                    width: 70% !important;
+    
+                                    margin-bottom: 5px !important;
+                                    i{
+                                        font-size:40px !important;
+                                    }
+                                }
+                                p{
+                                    font-size: 12px !important;
+                                    margin-bottom: 10px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }

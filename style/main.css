@@ -4,7 +4,7 @@
   --mainBackgroundColorLight:#eeeeee;
   --OneColor:#ff433a;
   --TwoColor:#ff6f0e;
-  --ThreeColor:#27947e;
+  --ThreeColor:#04a96d;
   --FourColor:#0853be;
   --FiveColor:#ff56ba;
 }
@@ -79,26 +79,25 @@
 }
 .portfolio .content .item {
   padding: 0 60px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
 }
-.portfolio .content .item .content1 {
+.portfolio .content .item .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
 }
-.portfolio .content .item .content1 .img {
+.portfolio .content .item .home .img {
   width: 33%;
   text-align: center;
   padding: 32px 0;
   position: relative;
 }
-.portfolio .content .item .content1 .img img {
+.portfolio .content .item .home .img img {
   width: 80%;
 }
-.portfolio .content .item .content1 .img .before {
+.portfolio .content .item .home .img .before {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -108,7 +107,7 @@
   border-top-color: transparent !important;
   border-left-color: transparent !important;
 }
-.portfolio .content .item .content1 .img .after {
+.portfolio .content .item .home .img .after {
   position: absolute;
   top: 0;
   left: 0;
@@ -118,25 +117,25 @@
   border-bottom-color: transparent !important;
   border-right-color: transparent !important;
 }
-.portfolio .content .item .content1 .title {
+.portfolio .content .item .home .title {
   width: 62%;
   padding: 0 10px;
   transition: 0.3s ease;
 }
-.portfolio .content .item .content1 .title h1 {
+.portfolio .content .item .home .title h1 {
   margin-bottom: 10px;
   font-size: 35px;
 }
-.portfolio .content .item .content1 .title h1:nth-of-type(2) {
+.portfolio .content .item .home .title h1:nth-of-type(2) {
   font-size: 30px;
   margin-bottom: 30px;
 }
-.portfolio .content .item .content1 .title p {
+.portfolio .content .item .home .title p {
   margin-bottom: 50px;
   font-size: 17px;
   text-align: justify;
 }
-.portfolio .content .item .content1 .title button {
+.portfolio .content .item .home .title button {
   padding: 10px 25px;
   border-radius: 30px;
   font-size: 16px;
@@ -147,18 +146,211 @@
   transition: 0.3s ease;
   position: relative;
 }
-.portfolio .content .item .content1 .title button a {
+.portfolio .content .item .home .title button a {
   color: white;
 }
-.portfolio .content .item .content1 .title button:hover::after {
+.portfolio .content .item .home .title button:hover::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+}
+.portfolio .content .item .projects, .portfolio .content .item .courses, .portfolio .content .item .skills {
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+.portfolio .content .item .projects .head, .portfolio .content .item .courses .head, .portfolio .content .item .skills .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.portfolio .content .item .projects .head h1, .portfolio .content .item .courses .head h1, .portfolio .content .item .skills .head h1 {
+  font-size: 30px;
+  transition: 0.3s ease;
+  margin: 0 10px;
+  font-size: 40px;
+}
+.portfolio .content .item .projects .head .after, .portfolio .content .item .projects .head .before, .portfolio .content .item .courses .head .after, .portfolio .content .item .courses .head .before, .portfolio .content .item .skills .head .after, .portfolio .content .item .skills .head .before {
+  width: 40px;
+  transition: 0.3s ease;
+  border: 2px solid;
+}
+.portfolio .content .item .projects .units, .portfolio .content .item .courses .units, .portfolio .content .item .skills .units {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio .content .item .projects .units .unit, .portfolio .content .item .courses .units .unit, .portfolio .content .item .skills .units .unit {
+  width: 31%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio .content .item .projects .units .unit img, .portfolio .content .item .courses .units .unit img, .portfolio .content .item .skills .units .unit img {
+  width: 100% !important;
+  display: block;
+}
+.portfolio .content .item .projects .units .unit .card, .portfolio .content .item .courses .units .unit .card, .portfolio .content .item .skills .units .unit .card {
+  width: 100%;
+}
+.portfolio .content .item .projects .units .unit .text_hover, .portfolio .content .item .courses .units .unit .text_hover, .portfolio .content .item .skills .units .unit .text_hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover, .portfolio .content .item .courses .units .unit .text_hover .cont_hover, .portfolio .content .item .skills .units .unit .text_hover .cont_hover {
+  color: white !important;
+  width: 100%;
+  text-align: center;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover h1, .portfolio .content .item .courses .units .unit .text_hover .cont_hover h1, .portfolio .content .item .skills .units .unit .text_hover .cont_hover h1 {
+  margin-bottom: 10px;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .course, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .course, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .course {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto 10px auto;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .course i, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .course i {
+  width: 30%;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover p, .portfolio .content .item .courses .units .unit .text_hover .cont_hover p, .portfolio .content .item .skills .units .unit .text_hover .cont_hover p {
+  font-size: 15px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a {
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+  display: inline-block;
+  margin: 0 5px;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a i, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a i, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a i {
+  font-size: 25px;
+}
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a:hover, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a:hover, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a:hover {
+  color: var(--mainBackgroundColorDark);
+}
+.portfolio .content .item .projects .units .unit .text, .portfolio .content .item .courses .units .unit .text, .portfolio .content .item .skills .units .unit .text {
+  text-align: left;
+  padding: 15px;
+}
+.portfolio .content .item .projects .units .unit .text h3, .portfolio .content .item .courses .units .unit .text h3, .portfolio .content .item .skills .units .unit .text h3 {
+  margin-bottom: 10px;
+}
+.portfolio .content .item .projects .units .unit .text p, .portfolio .content .item .courses .units .unit .text p, .portfolio .content .item .skills .units .unit .text p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.portfolio .content .item .projects .units .unit .text a, .portfolio .content .item .courses .units .unit .text a, .portfolio .content .item .skills .units .unit .text a {
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.portfolio .content .item .projects .units .unit .text a button, .portfolio .content .item .courses .units .unit .text a button, .portfolio .content .item .skills .units .unit .text a button {
+  color: #eeeeee;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  outline: none;
+  padding: 5px 0;
+  border: none;
+  cursor: pointer;
+}
+.portfolio .content .item .projects .units .unit .text a button:hover::after, .portfolio .content .item .courses .units .unit .text a button:hover::after, .portfolio .content .item .skills .units .unit .text a button:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 30px;
+}
+.portfolio .content .item .projects .units .unit .left, .portfolio .content .item .projects .units .unit .right, .portfolio .content .item .projects .units .unit .top, .portfolio .content .item .projects .units .unit .bottom, .portfolio .content .item .courses .units .unit .left, .portfolio .content .item .courses .units .unit .right, .portfolio .content .item .courses .units .unit .top, .portfolio .content .item .courses .units .unit .bottom, .portfolio .content .item .skills .units .unit .left, .portfolio .content .item .skills .units .unit .right, .portfolio .content .item .skills .units .unit .top, .portfolio .content .item .skills .units .unit .bottom {
+  position: absolute;
+  transition: 0.7s ease-out;
+}
+.portfolio .content .item .projects .units .unit .left, .portfolio .content .item .courses .units .unit .left, .portfolio .content .item .skills .units .unit .left {
+  bottom: 0;
+  left: 0;
+  background-color: var(--OneColor);
+  height: 0;
+}
+.portfolio .content .item .projects .units .unit .right, .portfolio .content .item .courses .units .unit .right, .portfolio .content .item .skills .units .unit .right {
+  top: 0;
+  right: 0;
+  background-color: var(--OneColor);
+  height: 0;
+}
+.portfolio .content .item .projects .units .unit .top, .portfolio .content .item .courses .units .unit .top, .portfolio .content .item .skills .units .unit .top {
+  top: 0;
+  left: 0;
+  background-color: var(--OneColor);
+  width: 0;
+}
+.portfolio .content .item .projects .units .unit .bottom, .portfolio .content .item .courses .units .unit .bottom, .portfolio .content .item .skills .units .unit .bottom {
+  bottom: 0;
+  right: 0;
+  background-color: var(--OneColor);
+  width: 0;
+}
+.portfolio .content .item .projects .units .unit:hover .left, .portfolio .content .item .projects .units .unit:hover .right, .portfolio .content .item .courses .units .unit:hover .left, .portfolio .content .item .courses .units .unit:hover .right, .portfolio .content .item .skills .units .unit:hover .left, .portfolio .content .item .skills .units .unit:hover .right {
+  padding: 2px;
+  height: 90%;
+}
+.portfolio .content .item .projects .units .unit:hover .top, .portfolio .content .item .projects .units .unit:hover .bottom, .portfolio .content .item .courses .units .unit:hover .top, .portfolio .content .item .courses .units .unit:hover .bottom, .portfolio .content .item .skills .units .unit:hover .top, .portfolio .content .item .skills .units .unit:hover .bottom {
+  padding: 2px;
+  width: 90%;
+}
+.portfolio .content .item .projects .units .unit:hover .text_hover, .portfolio .content .item .courses .units .unit:hover .text_hover, .portfolio .content .item .skills .units .unit:hover .text_hover {
+  opacity: 1;
+}
+.portfolio .content .item .skills .units {
+  padding: 0 50px;
+  justify-content: space-between;
+}
+.portfolio .content .item .skills .units .unit {
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px !important;
+  box-shadow: 0px 0px 5px rgba(32, 32, 32, 0.5), 0px 7px 5px rgba(32, 32, 32, 0.5);
+  width: 17%;
+}
+.portfolio .content .item .skills .units .unit i {
+  margin-bottom: 20px;
+}
+.portfolio .content .item .skills .units .unit img {
+  display: block;
+  margin: auto;
+  padding-top: 8px;
+  margin-bottom: 25px;
+  width: 65% !important;
+}
+.portfolio .content .item .courses .units .unit {
+  border-radius: 5px;
 }
 .portfolio .content .settings {
   display: flex;
@@ -224,7 +416,7 @@
   transform: 0.2s ease;
 }
 #checkdark:checked ~ .portfolio .nav {
-  background-color: #dbdbdb;
+  background-color: #adadad;
 }
 #checkdark:checked ~ .portfolio .nav .menu ul li {
   border-bottom-color: #1b1b1b;
@@ -232,11 +424,20 @@
 #checkdark:checked ~ .portfolio .nav .menu ul li a {
   color: black;
 }
-#checkdark:checked ~ .portfolio .settings .input2 label #whiteLight {
+#checkdark:checked ~ .portfolio .content .settings .input2 label #whiteLight {
   display: block;
 }
-#checkdark:checked ~ .portfolio .settings .input2 label #whitedark {
+#checkdark:checked ~ .portfolio .content .settings .input2 label #whitedark {
   display: none;
+}
+#checkdark:checked ~ .portfolio .content .item .projects .units .unit {
+  background-color: #e4e4e4;
+}
+#checkdark:checked ~ .portfolio .content .item .courses .units .unit {
+  background-color: #9b9b9b;
+}
+#checkdark:checked ~ .portfolio .content .item .skills .units .unit {
+  box-shadow: 0px 0px 5px rgba(168, 168, 168, 0.5), 0px 7px 5px rgba(168, 168, 168, 0.5);
 }
 
 #checkdark:not(:checked) ~ .portfolio .nav .menu ul li {
@@ -245,9 +446,12 @@
 #checkdark:not(:checked) ~ .portfolio .nav .menu ul li a {
   color: #eeeeee;
 }
-#checkdark:not(:checked) ~ .portfolio .settings .input2 label #whiteLight {
+#checkdark:not(:checked) ~ .portfolio .content .settings .input2 label #whiteLight {
   display: none;
 }
-#checkdark:not(:checked) ~ .portfolio .settings .input2 label #whitedark {
+#checkdark:not(:checked) ~ .portfolio .content .settings .input2 label #whitedark {
   display: block;
+}
+#checkdark:not(:checked) ~ .portfolio .content .item .projects .units .unit, #checkdark:not(:checked) ~ .portfolio .content .item .courses .units .unit {
+  background-color: #1b1b1b;
 }/*# sourceMappingURL=main.css.map */

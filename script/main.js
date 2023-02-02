@@ -6,12 +6,17 @@ let h1 = document.querySelectorAll(".nav  h1")[0];
 let menu = document.querySelectorAll(".nav .menu")[0];
 let content = document.querySelectorAll(".portfolio .content")[0];
 let item = document.querySelectorAll(".portfolio .content .item");
+let borderAnimation = document.querySelectorAll(".portfolio .content .item .projects .bor");
+let buttonIncard = document.querySelectorAll(".but");
 let darkmode = document.getElementById("checkdark");
 let buttondark = document.querySelectorAll(".input2 label")[0];
-let spanNameH1 = document.querySelectorAll(".content .content1 .title h1 span");
-let buttonHome = document.querySelectorAll(".content .content1 .title button")[0];
- let contentImgborder = document.querySelectorAll(".content .content1 .img div");
- opacityImg()
+let spanNameH1 = document.querySelectorAll(".content .home .title h1 span");
+let buttonHome = document.querySelectorAll(".content .home .title button")[0];
+let contentImgborder = document.querySelectorAll(".content .home .img div");
+let textHover = document.querySelectorAll(".portfolio .content .courses .units .unit .text_hover");
+let coursesUnit = document.querySelectorAll(".portfolio .content .courses .units .unit");
+
+opacityImg()
 function opacityImg(){
     if(content.scrollTop > item[0].scrollHeight/2){
         let colorBorder="";
@@ -108,7 +113,6 @@ function activeColor(e){
         borderImg.style.cssText = `
         border:5px solid  ${e.style.backgroundColor};
         transition:0.3s ease;
-        
         `;
         navItem.forEach(m=>{
             if(m.classList == "linkItem active"){
@@ -132,8 +136,32 @@ function activeColor(e){
             buttonHome.style.cssText = `
             background-color:${e.style.backgroundColor};
             
-            `
+            `;
+            buttonIncard.forEach(m=>{
+                m.style.cssText = `
+                background-color:${e.style.backgroundColor}
+                `;    
+            })
+            borderAnimation.forEach(m=>{
+                m.style.cssText = `
+                background-color:${e.style.backgroundColor}
+                `
+            })
+            
+            textHover.forEach(m=>{
+                m.style.cssText = `
+                background-color:${e.style.backgroundColor}
+                `
+            })
+            // coursesUnit.forEach(m=>{
+            //     m.style.cssText = `
+            //     border:5px solid ${e.style.backgroundColor};
+            //     `
+            // })
         
+        
+            
+            
 
     }
 }

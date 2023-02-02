@@ -1,21 +1,29 @@
 @media screen and (max-width: 1150px) {
-  .portfolio .content {
-    border: 1px solid red !important;
-  }
   .portfolio .content .item {
     padding: 0 20px !important;
   }
-  .portfolio .content .item .content1 .img {
+  .portfolio .content .item .home .img {
     width: 30% !important;
   }
-  .portfolio .content .item .content1 .title {
+  .portfolio .content .item .home .title {
     width: 65% !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(1) {
+  .portfolio .content .item .home .title h1:nth-of-type(1) {
     font-size: 32px;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(2) {
+  .portfolio .content .item .home .title h1:nth-of-type(2) {
     font-size: 29px;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover h1 {
+    margin-bottom: 5px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover .course {
+    width: 100% !important;
+    margin-bottom: 5px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover p {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -28,44 +36,77 @@
   .portfolio .nav .menu ul li a i {
     margin: 0 10px !important;
   }
+  .portfolio .content .item .courses .units .unit .text_hover h1 {
+    font-size: 20px !important;
+    margin-bottom: 5px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover .course {
+    width: 100%;
+    margin-bottom: 2px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover .course i {
+    font-size: 30px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover p {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+  }
 }
 @media screen and (max-width: 950px) {
   .portfolio .content .item {
-    padding: 20px 5px !important;
     height: auto !important;
+    padding: 20px !important;
   }
-  .portfolio .content .item .content1 {
+  .portfolio .content .item .home {
     display: block !important;
   }
-  .portfolio .content .item .content1 .img {
+  .portfolio .content .item .home .img {
     display: block;
     margin-bottom: 20px !important;
     width: 40% !important;
     margin: auto;
     padding: 25px 0 !important;
   }
-  .portfolio .content .item .content1 .img .after, .portfolio .content .item .content1 .img .before {
+  .portfolio .content .item .home .img .after, .portfolio .content .item .home .img .before {
     border-style: solid;
     width: 50% !important;
     height: 50% !important;
   }
-  .portfolio .content .item .content1 .img img {
+  .portfolio .content .item .home .img img {
     width: 85% !important;
   }
-  .portfolio .content .item .content1 .title {
+  .portfolio .content .item .home .title {
     width: 100% !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(1) {
+  .portfolio .content .item .home .title h1:nth-of-type(1) {
     font-size: 35px !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(2) {
+  .portfolio .content .item .home .title h1:nth-of-type(2) {
     font-size: 28px !important;
   }
-  .portfolio .content .item .content1 .title p {
+  .portfolio .content .item .home .title p {
     margin-bottom: 0 !important;
   }
-  .portfolio .content .item .content1 .title button {
+  .portfolio .content .item .home .title button {
     display: none;
+  }
+  .portfolio .content .item .projects .units .unit, .portfolio .content .item .courses .units .unit {
+    width: 49% !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover h1, .portfolio .content .item .courses .units .unit .text_hover h1 {
+    font-size: 40px !important;
+    margin-bottom: 25px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover .course, .portfolio .content .item .courses .units .unit .text_hover .course {
+    width: 70% !important;
+    margin-bottom: 10px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .course i {
+    font-size: 50px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover p, .portfolio .content .item .courses .units .unit .text_hover p {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
   }
 }
 @media screen and (max-width: 750px) {
@@ -80,6 +121,21 @@
   }
   .portfolio .content #checksettings:checked ~ .settings {
     right: 2px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover h1 {
+    font-size: 30px !important;
+    margin-bottom: 15px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover .course {
+    width: 70% !important;
+    margin-bottom: 10px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover .course i {
+    font-size: 40px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover p {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
   }
 }
 @media screen and (max-width: 655px) {
@@ -123,55 +179,115 @@
   .portfolio .content {
     width: 100% !important;
   }
-  .portfolio .content .item .content1 .img {
+  .portfolio .content .item .home .img {
     width: 60% !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(1) {
+  .portfolio .content .item .home .title h1:nth-of-type(1) {
     font-size: 30px !important;
   }
 }
 @media screen and (max-width: 620px) {
   .portfolio .content .item {
-    padding: 20px 5px !important;
-    height: auto !important;
+    padding: 20px !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(1) {
+  .portfolio .content .item .home .title h1:nth-of-type(1) {
     font-size: 25px !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(2) {
+  .portfolio .content .item .home .title h1:nth-of-type(2) {
     font-size: 23px !important;
   }
-  .portfolio .content .item .content1 .title p {
+  .portfolio .content .item .home .title p {
     font-size: 15px !important;
+  }
+  .portfolio .content .item .projects .units .unit, .portfolio .content .item .courses .units .unit {
+    width: 100% !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover h1, .portfolio .content .item .courses .units .unit .text_hover h1 {
+    font-size: 40px !important;
+    margin-bottom: 20px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover .course, .portfolio .content .item .courses .units .unit .text_hover .course {
+    width: 70% !important;
+    margin-bottom: 10px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .course i {
+    font-size: 50px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover p, .portfolio .content .item .courses .units .unit .text_hover p {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
   }
 }
 @media screen and (max-width: 450px) {
-  .portfolio .content .item .content1 .img {
+  .portfolio .content .item .home .img {
     width: 95% !important;
   }
-  .portfolio .content .item .content1 .title h1 span {
+  .portfolio .content .item .home .title h1 span {
     display: block;
     margin-left: 30px !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(1) {
+  .portfolio .content .item .home .title h1:nth-of-type(1) {
     font-size: 27px !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(2) {
+  .portfolio .content .item .home .title h1:nth-of-type(2) {
     font-size: 23px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover h1 {
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover .course {
+    width: 70% !important;
+    margin-bottom: 10px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover .course i {
+    font-size: 40px !important;
+  }
+  .portfolio .content .item .courses .units .unit .text_hover p {
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
   }
 }
 @media screen and (max-width: 350px) {
-  .portfolio .content .item .content1 .title h1 span {
+  .portfolio .content .item {
+    padding: 20px 5px !important;
+  }
+  .portfolio .content .item .home .title h1 span {
     display: block;
     margin-left: 10px !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(1) {
+  .portfolio .content .item .home .title h1:nth-of-type(1) {
     font-size: 23px !important;
   }
-  .portfolio .content .item .content1 .title h1:nth-of-type(2) {
+  .portfolio .content .item .home .title h1:nth-of-type(2) {
     font-size: 19px !important;
   }
-  .portfolio .content .item .content1 .title p {
+  .portfolio .content .item .home .title p {
     font-size: 13px !important;
+  }
+  .portfolio .content .item .projects .head h1, .portfolio .content .item .courses .head h1 {
+    font-size: 25px !important;
+  }
+  .portfolio .content .item .projects .head .after, .portfolio .content .item .projects .head .before, .portfolio .content .item .courses .head .after, .portfolio .content .item .courses .head .before {
+    width: 25px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover, .portfolio .content .item .courses .units .unit .text_hover {
+    padding: 5px 10px !important;
+    overflow: hidden !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover h1, .portfolio .content .item .courses .units .unit .text_hover h1 {
+    font-size: 25px !important;
+    margin-bottom: 10px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover .course, .portfolio .content .item .courses .units .unit .text_hover .course {
+    width: 70% !important;
+    margin-bottom: 5px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .course i {
+    font-size: 40px !important;
+  }
+  .portfolio .content .item .projects .units .unit .text_hover p, .portfolio .content .item .courses .units .unit .text_hover p {
+    font-size: 12px !important;
+    margin-bottom: 10px !important;
   }
 }/*# sourceMappingURL=media.css.map */
