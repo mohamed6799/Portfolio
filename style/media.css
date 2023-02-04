@@ -108,6 +108,13 @@
     font-size: 16px !important;
     margin-bottom: 10px !important;
   }
+  .portfolio .content .item .skills p {
+    width: 90% !important;
+    font-size: 19px !important;
+  }
+  .portfolio .content .item .skills .units .unit {
+    width: 30% !important;
+  }
 }
 @media screen and (max-width: 750px) {
   .portfolio .nav h1 {
@@ -217,6 +224,18 @@
     font-size: 20px !important;
     margin-bottom: 15px !important;
   }
+  .portfolio .content .item .skills p {
+    width: 90% !important;
+    font-size: 19px !important;
+  }
+  .portfolio .content .item .skills .units {
+    padding: 0 20px !important;
+  }
+  .portfolio .content .item .skills .units .unit {
+    width: 47% !important;
+    margin: 0 !important;
+    margin-bottom: 50 !important;
+  }
 }
 @media screen and (max-width: 450px) {
   .portfolio .content .item .home .img {
@@ -233,7 +252,6 @@
     font-size: 23px !important;
   }
   .portfolio .content .item .courses .units .unit .text_hover h1 {
-    font-size: 30px !important;
     margin-bottom: 10px !important;
   }
   .portfolio .content .item .courses .units .unit .text_hover .course {
@@ -246,6 +264,14 @@
   .portfolio .content .item .courses .units .unit .text_hover p {
     font-size: 14px !important;
     margin-bottom: 15px !important;
+  }
+  .portfolio .content .item .skills p {
+    width: 100% !important;
+    font-size: 17px !important;
+    text-align: justify;
+  }
+  .portfolio .content .item .skills .units .unit {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 350px) {
@@ -265,29 +291,33 @@
   .portfolio .content .item .home .title p {
     font-size: 13px !important;
   }
-  .portfolio .content .item .projects .head h1, .portfolio .content .item .courses .head h1 {
-    font-size: 25px !important;
+  .portfolio .content .item .projects .head h1, .portfolio .content .item .courses .head h1, .portfolio .content .item .skills .head h1 {
+    font-size: 30px !important;
   }
-  .portfolio .content .item .projects .head .after, .portfolio .content .item .projects .head .before, .portfolio .content .item .courses .head .after, .portfolio .content .item .courses .head .before {
+  .portfolio .content .item .projects .head .after, .portfolio .content .item .projects .head .before, .portfolio .content .item .courses .head .after, .portfolio .content .item .courses .head .before, .portfolio .content .item .skills .head .after, .portfolio .content .item .skills .head .before {
     width: 25px !important;
   }
-  .portfolio .content .item .projects .units .unit .text_hover, .portfolio .content .item .courses .units .unit .text_hover {
+  .portfolio .content .item .projects .units .unit .text_hover, .portfolio .content .item .courses .units .unit .text_hover, .portfolio .content .item .skills .units .unit .text_hover {
     padding: 5px 10px !important;
     overflow: hidden !important;
   }
-  .portfolio .content .item .projects .units .unit .text_hover h1, .portfolio .content .item .courses .units .unit .text_hover h1 {
+  .portfolio .content .item .projects .units .unit .text_hover h1, .portfolio .content .item .courses .units .unit .text_hover h1, .portfolio .content .item .skills .units .unit .text_hover h1 {
     font-size: 25px !important;
     margin-bottom: 10px !important;
   }
-  .portfolio .content .item .projects .units .unit .text_hover .course, .portfolio .content .item .courses .units .unit .text_hover .course {
+  .portfolio .content .item .projects .units .unit .text_hover .course, .portfolio .content .item .courses .units .unit .text_hover .course, .portfolio .content .item .skills .units .unit .text_hover .course {
     width: 70% !important;
     margin-bottom: 5px !important;
   }
-  .portfolio .content .item .projects .units .unit .text_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .course i {
+  .portfolio .content .item .projects .units .unit .text_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .course i, .portfolio .content .item .skills .units .unit .text_hover .course i {
     font-size: 40px !important;
   }
-  .portfolio .content .item .projects .units .unit .text_hover p, .portfolio .content .item .courses .units .unit .text_hover p {
+  .portfolio .content .item .projects .units .unit .text_hover p, .portfolio .content .item .courses .units .unit .text_hover p, .portfolio .content .item .skills .units .unit .text_hover p {
     font-size: 12px !important;
     margin-bottom: 10px !important;
+  }
+  .portfolio .content .item .skills p {
+    width: 100% !important;
+    font-size: 15px !important;
   }
 }/*# sourceMappingURL=media.css.map */

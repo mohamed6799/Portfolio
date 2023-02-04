@@ -159,53 +159,59 @@
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
-.portfolio .content .item .projects, .portfolio .content .item .courses, .portfolio .content .item .skills {
+.portfolio .content .item .projects, .portfolio .content .item .courses, .portfolio .content .item .skills, .portfolio .content .item .about {
   padding: 30px 0;
   width: 100%;
   text-align: center;
 }
-.portfolio .content .item .projects .head, .portfolio .content .item .courses .head, .portfolio .content .item .skills .head {
+.portfolio .content .item .projects .head, .portfolio .content .item .courses .head, .portfolio .content .item .skills .head, .portfolio .content .item .about .head {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
-.portfolio .content .item .projects .head h1, .portfolio .content .item .courses .head h1, .portfolio .content .item .skills .head h1 {
+.portfolio .content .item .projects .head h1, .portfolio .content .item .courses .head h1, .portfolio .content .item .skills .head h1, .portfolio .content .item .about .head h1 {
   font-size: 30px;
   transition: 0.3s ease;
   margin: 0 10px;
   font-size: 40px;
 }
-.portfolio .content .item .projects .head .after, .portfolio .content .item .projects .head .before, .portfolio .content .item .courses .head .after, .portfolio .content .item .courses .head .before, .portfolio .content .item .skills .head .after, .portfolio .content .item .skills .head .before {
+.portfolio .content .item .projects .head .after, .portfolio .content .item .projects .head .before, .portfolio .content .item .courses .head .after, .portfolio .content .item .courses .head .before, .portfolio .content .item .skills .head .after, .portfolio .content .item .skills .head .before, .portfolio .content .item .about .head .after, .portfolio .content .item .about .head .before {
   width: 40px;
   transition: 0.3s ease;
   border: 2px solid;
 }
-.portfolio .content .item .projects .units, .portfolio .content .item .courses .units, .portfolio .content .item .skills .units {
+.portfolio .content .item .projects p, .portfolio .content .item .courses p, .portfolio .content .item .skills p, .portfolio .content .item .about p {
+  width: 80%;
+  margin-bottom: 30px !important;
+  font-size: 19px;
+  margin: auto;
+}
+.portfolio .content .item .projects .units, .portfolio .content .item .courses .units, .portfolio .content .item .skills .units, .portfolio .content .item .about .units {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.portfolio .content .item .projects .units .unit, .portfolio .content .item .courses .units .unit, .portfolio .content .item .skills .units .unit {
+.portfolio .content .item .projects .units .unit, .portfolio .content .item .courses .units .unit, .portfolio .content .item .skills .units .unit, .portfolio .content .item .about .units .unit {
   width: 31%;
   border-radius: 5px;
   margin-bottom: 20px;
   overflow: hidden;
   position: relative;
 }
-.portfolio .content .item .projects .units .unit img, .portfolio .content .item .courses .units .unit img, .portfolio .content .item .skills .units .unit img {
+.portfolio .content .item .projects .units .unit img, .portfolio .content .item .courses .units .unit img, .portfolio .content .item .skills .units .unit img, .portfolio .content .item .about .units .unit img {
   width: 100% !important;
   display: block;
 }
-.portfolio .content .item .projects .units .unit .card, .portfolio .content .item .courses .units .unit .card, .portfolio .content .item .skills .units .unit .card {
+.portfolio .content .item .projects .units .unit .card, .portfolio .content .item .courses .units .unit .card, .portfolio .content .item .skills .units .unit .card, .portfolio .content .item .about .units .unit .card {
   width: 100%;
 }
-.portfolio .content .item .projects .units .unit .text_hover, .portfolio .content .item .courses .units .unit .text_hover, .portfolio .content .item .skills .units .unit .text_hover {
+.portfolio .content .item .projects .units .unit .text_hover, .portfolio .content .item .courses .units .unit .text_hover, .portfolio .content .item .skills .units .unit .text_hover, .portfolio .content .item .about .units .unit .text_hover {
   position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
-  padding: 10px;
+  padding: 10px 5px;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -214,60 +220,62 @@
   left: 0;
   transition: 0.5s ease;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover, .portfolio .content .item .courses .units .unit .text_hover .cont_hover, .portfolio .content .item .skills .units .unit .text_hover .cont_hover {
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover, .portfolio .content .item .courses .units .unit .text_hover .cont_hover, .portfolio .content .item .skills .units .unit .text_hover .cont_hover, .portfolio .content .item .about .units .unit .text_hover .cont_hover {
   color: white !important;
   width: 100%;
   text-align: center;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover h1, .portfolio .content .item .courses .units .unit .text_hover .cont_hover h1, .portfolio .content .item .skills .units .unit .text_hover .cont_hover h1 {
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover h1, .portfolio .content .item .courses .units .unit .text_hover .cont_hover h1, .portfolio .content .item .skills .units .unit .text_hover .cont_hover h1, .portfolio .content .item .about .units .unit .text_hover .cont_hover h1 {
   margin-bottom: 10px;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover .course, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .course, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .course {
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .course, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .course, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .course, .portfolio .content .item .about .units .unit .text_hover .cont_hover .course {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 0 auto;
+  margin-bottom: 20px !important;
   width: 70%;
   flex-wrap: wrap;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .course i, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .course i {
-  width: 30%;
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .course i, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .course i, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .course i, .portfolio .content .item .about .units .unit .text_hover .cont_hover .course i {
+  width: auto;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover p, .portfolio .content .item .courses .units .unit .text_hover .cont_hover p, .portfolio .content .item .skills .units .unit .text_hover .cont_hover p {
-  font-size: 15px;
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover p, .portfolio .content .item .courses .units .unit .text_hover .cont_hover p, .portfolio .content .item .skills .units .unit .text_hover .cont_hover p, .portfolio .content .item .about .units .unit .text_hover .cont_hover p {
+  font-size: 16px;
   text-align: left;
+  width: 100%;
   margin-bottom: 15px;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a {
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a, .portfolio .content .item .about .units .unit .text_hover .cont_hover .links a {
   color: white;
   font-weight: bold;
   transition: 0.3s ease;
   display: inline-block;
   margin: 0 5px;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a i, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a i, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a i {
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a i, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a i, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a i, .portfolio .content .item .about .units .unit .text_hover .cont_hover .links a i {
   font-size: 25px;
 }
-.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a:hover, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a:hover, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a:hover {
+.portfolio .content .item .projects .units .unit .text_hover .cont_hover .links a:hover, .portfolio .content .item .courses .units .unit .text_hover .cont_hover .links a:hover, .portfolio .content .item .skills .units .unit .text_hover .cont_hover .links a:hover, .portfolio .content .item .about .units .unit .text_hover .cont_hover .links a:hover {
   color: var(--mainBackgroundColorDark);
 }
-.portfolio .content .item .projects .units .unit .text, .portfolio .content .item .courses .units .unit .text, .portfolio .content .item .skills .units .unit .text {
+.portfolio .content .item .projects .units .unit .text, .portfolio .content .item .courses .units .unit .text, .portfolio .content .item .skills .units .unit .text, .portfolio .content .item .about .units .unit .text {
   text-align: left;
   padding: 15px;
 }
-.portfolio .content .item .projects .units .unit .text h3, .portfolio .content .item .courses .units .unit .text h3, .portfolio .content .item .skills .units .unit .text h3 {
+.portfolio .content .item .projects .units .unit .text h3, .portfolio .content .item .courses .units .unit .text h3, .portfolio .content .item .skills .units .unit .text h3, .portfolio .content .item .about .units .unit .text h3 {
   margin-bottom: 10px;
 }
-.portfolio .content .item .projects .units .unit .text p, .portfolio .content .item .courses .units .unit .text p, .portfolio .content .item .skills .units .unit .text p {
+.portfolio .content .item .projects .units .unit .text p, .portfolio .content .item .courses .units .unit .text p, .portfolio .content .item .skills .units .unit .text p, .portfolio .content .item .about .units .unit .text p {
   margin-bottom: 20px;
   font-size: 14px;
 }
-.portfolio .content .item .projects .units .unit .text a, .portfolio .content .item .courses .units .unit .text a, .portfolio .content .item .skills .units .unit .text a {
+.portfolio .content .item .projects .units .unit .text a, .portfolio .content .item .courses .units .unit .text a, .portfolio .content .item .skills .units .unit .text a, .portfolio .content .item .about .units .unit .text a {
   display: block;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.portfolio .content .item .projects .units .unit .text a button, .portfolio .content .item .courses .units .unit .text a button, .portfolio .content .item .skills .units .unit .text a button {
+.portfolio .content .item .projects .units .unit .text a button, .portfolio .content .item .courses .units .unit .text a button, .portfolio .content .item .skills .units .unit .text a button, .portfolio .content .item .about .units .unit .text a button {
   color: #eeeeee;
   width: 100%;
   border-radius: 10px;
@@ -277,7 +285,7 @@
   border: none;
   cursor: pointer;
 }
-.portfolio .content .item .projects .units .unit .text a button:hover::after, .portfolio .content .item .courses .units .unit .text a button:hover::after, .portfolio .content .item .skills .units .unit .text a button:hover::after {
+.portfolio .content .item .projects .units .unit .text a button:hover::after, .portfolio .content .item .courses .units .unit .text a button:hover::after, .portfolio .content .item .skills .units .unit .text a button:hover::after, .portfolio .content .item .about .units .unit .text a button:hover::after {
   content: "";
   position: absolute;
   top: 0;
@@ -287,44 +295,59 @@
   background-color: rgba(0, 0, 0, 0.1) !important;
   border-radius: 30px;
 }
-.portfolio .content .item .projects .units .unit .left, .portfolio .content .item .projects .units .unit .right, .portfolio .content .item .projects .units .unit .top, .portfolio .content .item .projects .units .unit .bottom, .portfolio .content .item .courses .units .unit .left, .portfolio .content .item .courses .units .unit .right, .portfolio .content .item .courses .units .unit .top, .portfolio .content .item .courses .units .unit .bottom, .portfolio .content .item .skills .units .unit .left, .portfolio .content .item .skills .units .unit .right, .portfolio .content .item .skills .units .unit .top, .portfolio .content .item .skills .units .unit .bottom {
+.portfolio .content .item .projects .units .unit .left, .portfolio .content .item .projects .units .unit .right, .portfolio .content .item .projects .units .unit .top, .portfolio .content .item .projects .units .unit .bottom, .portfolio .content .item .courses .units .unit .left, .portfolio .content .item .courses .units .unit .right, .portfolio .content .item .courses .units .unit .top, .portfolio .content .item .courses .units .unit .bottom, .portfolio .content .item .skills .units .unit .left, .portfolio .content .item .skills .units .unit .right, .portfolio .content .item .skills .units .unit .top, .portfolio .content .item .skills .units .unit .bottom, .portfolio .content .item .about .units .unit .left, .portfolio .content .item .about .units .unit .right, .portfolio .content .item .about .units .unit .top, .portfolio .content .item .about .units .unit .bottom {
   position: absolute;
   transition: 0.7s ease-out;
 }
-.portfolio .content .item .projects .units .unit .left, .portfolio .content .item .courses .units .unit .left, .portfolio .content .item .skills .units .unit .left {
+.portfolio .content .item .projects .units .unit .left, .portfolio .content .item .courses .units .unit .left, .portfolio .content .item .skills .units .unit .left, .portfolio .content .item .about .units .unit .left {
   bottom: 0;
   left: 0;
   background-color: var(--OneColor);
   height: 0;
 }
-.portfolio .content .item .projects .units .unit .right, .portfolio .content .item .courses .units .unit .right, .portfolio .content .item .skills .units .unit .right {
+.portfolio .content .item .projects .units .unit .right, .portfolio .content .item .courses .units .unit .right, .portfolio .content .item .skills .units .unit .right, .portfolio .content .item .about .units .unit .right {
   top: 0;
   right: 0;
   background-color: var(--OneColor);
   height: 0;
 }
-.portfolio .content .item .projects .units .unit .top, .portfolio .content .item .courses .units .unit .top, .portfolio .content .item .skills .units .unit .top {
+.portfolio .content .item .projects .units .unit .top, .portfolio .content .item .courses .units .unit .top, .portfolio .content .item .skills .units .unit .top, .portfolio .content .item .about .units .unit .top {
   top: 0;
   left: 0;
   background-color: var(--OneColor);
   width: 0;
 }
-.portfolio .content .item .projects .units .unit .bottom, .portfolio .content .item .courses .units .unit .bottom, .portfolio .content .item .skills .units .unit .bottom {
+.portfolio .content .item .projects .units .unit .bottom, .portfolio .content .item .courses .units .unit .bottom, .portfolio .content .item .skills .units .unit .bottom, .portfolio .content .item .about .units .unit .bottom {
   bottom: 0;
   right: 0;
   background-color: var(--OneColor);
   width: 0;
 }
-.portfolio .content .item .projects .units .unit:hover .left, .portfolio .content .item .projects .units .unit:hover .right, .portfolio .content .item .courses .units .unit:hover .left, .portfolio .content .item .courses .units .unit:hover .right, .portfolio .content .item .skills .units .unit:hover .left, .portfolio .content .item .skills .units .unit:hover .right {
+.portfolio .content .item .projects .units .unit:hover .left, .portfolio .content .item .projects .units .unit:hover .right, .portfolio .content .item .courses .units .unit:hover .left, .portfolio .content .item .courses .units .unit:hover .right, .portfolio .content .item .skills .units .unit:hover .left, .portfolio .content .item .skills .units .unit:hover .right, .portfolio .content .item .about .units .unit:hover .left, .portfolio .content .item .about .units .unit:hover .right {
   padding: 2px;
   height: 90%;
 }
-.portfolio .content .item .projects .units .unit:hover .top, .portfolio .content .item .projects .units .unit:hover .bottom, .portfolio .content .item .courses .units .unit:hover .top, .portfolio .content .item .courses .units .unit:hover .bottom, .portfolio .content .item .skills .units .unit:hover .top, .portfolio .content .item .skills .units .unit:hover .bottom {
+.portfolio .content .item .projects .units .unit:hover .top, .portfolio .content .item .projects .units .unit:hover .bottom, .portfolio .content .item .courses .units .unit:hover .top, .portfolio .content .item .courses .units .unit:hover .bottom, .portfolio .content .item .skills .units .unit:hover .top, .portfolio .content .item .skills .units .unit:hover .bottom, .portfolio .content .item .about .units .unit:hover .top, .portfolio .content .item .about .units .unit:hover .bottom {
   padding: 2px;
   width: 90%;
 }
-.portfolio .content .item .projects .units .unit:hover .text_hover, .portfolio .content .item .courses .units .unit:hover .text_hover, .portfolio .content .item .skills .units .unit:hover .text_hover {
+.portfolio .content .item .projects .units .unit:hover .text_hover, .portfolio .content .item .courses .units .unit:hover .text_hover, .portfolio .content .item .skills .units .unit:hover .text_hover, .portfolio .content .item .about .units .unit:hover .text_hover {
   opacity: 1;
+}
+.portfolio .content .item .about .units {
+  border: 1px solid blue;
+  justify-content: space-between !important;
+}
+.portfolio .content .item .about .units .unit {
+  width: 50% !important;
+  border: 1px solid yellow;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.portfolio .content .item .about .units .unit p {
+  font-size: 18px;
+  text-align: left;
+  margin: 0 0 10px 0 !important;
 }
 .portfolio .content .item .skills .units {
   padding: 0 50px;

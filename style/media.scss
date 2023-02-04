@@ -131,7 +131,7 @@
                     }
                     
                 }
-                .projects , .courses{
+                .projects , .courses {
                     .units{
                         .unit{
                             width: 49% !important;
@@ -152,6 +152,18 @@
                                     margin-bottom: 10px !important;
                                 }
                             }
+                        }
+                    }
+                }
+                .skills{
+                    p{
+                        width: 90% !important;
+                        font-size: 19px !important;
+                    }
+                    .units{
+                        .unit{
+                            width: 30% !important;
+                            
                         }
                     }
                 }
@@ -321,6 +333,20 @@
                         }
                     }
                 }
+                .skills{
+                    p{
+                        width: 90% !important;
+                        font-size: 19px !important;
+                    }
+                    .units{
+                        padding: 0 20px !important;
+                        .unit{
+                            width: 47% !important;
+                            margin: 0 !important;
+                            margin-bottom: 50 !important;
+                        }
+                    }
+                }
             }
         }
     }
@@ -353,7 +379,6 @@
                         .unit{
                             .text_hover{
                                 h1{
-                                    font-size: 30px !important;
                                     margin-bottom: 10px !important;
                                 }
                                 .course{
@@ -369,6 +394,18 @@
                                     margin-bottom: 15px !important;
                                 }
                             }
+                        }
+                    }
+                }
+                .skills{
+                    p{
+                        width: 100% !important;
+                        font-size: 17px !important;
+                        text-align: justify;
+                    }
+                    .units{
+                        .unit{
+                            width: 100% !important;
                         }
                     }
                 }
@@ -400,10 +437,10 @@
                         }
                     }
                 }
-                .projects , .courses{
+                .projects , .courses , .skills{
                     .head{
                         h1{
-                            font-size: 25px !important;
+                            font-size: 30px !important;
                         }
                         .after , .before{
                             width: 25px !important;
@@ -434,6 +471,13 @@
                             }
                         }
                     }
+                }
+                .skills{
+                    p{
+                        width: 100% !important;
+                        font-size: 15px !important;
+                    }
+                    
                 }
                 
             }

@@ -159,7 +159,7 @@
                 }
             }
             
-            .projects , .courses , .skills{
+            .projects , .courses , .skills , .about{
                 padding: 30px 0;
                 width: 100%;
                 text-align: center;
@@ -167,7 +167,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 70px;
+                    margin-bottom: 50px;
                     h1{
                         font-size: 30px;
                         transition:0.3s ease;
@@ -180,6 +180,12 @@
                         border: 2px solid ;
 
                     }
+                }
+                p{
+                    width: 80%;
+                    margin-bottom: 30px !important;
+                    font-size: 19px;
+                    margin:auto;
                 }
                 .units{
                     display: flex;
@@ -203,7 +209,7 @@
                             height: 100%;
                             width: 100%;
                             display: flex;
-                            padding: 10px;
+                            padding: 10px 5px;
                             justify-content: center;
                             align-items: center;
                             opacity: 0;
@@ -222,16 +228,18 @@
                                     display: flex;
                                     justify-content: space-evenly;
                                     align-items: center;
-                                    margin: 0 auto 10px auto;
+                                    margin: 0 auto 0 auto;
+                                    margin-bottom: 20px !important;
                                     width: 70%;
                                     flex-wrap: wrap;
                                     i{
-                                        width: 30%;
+                                        width: auto;
                                     }
                                 }
                                 p{
-                                    font-size: 15px;
+                                    font-size: 16px;
                                     text-align: left;
+                                    width: 100%;
                                     margin-bottom: 15px;
                                 }
                                 .links{
@@ -334,6 +342,24 @@
                             opacity:1;
                         }
                      }
+                    }
+                }
+            }
+            .about{
+                .units{
+                    border: 1px solid blue;
+                    justify-content: space-between !important;
+
+                    .unit{
+                        width: 50% !important;
+                        border:1px solid yellow;
+                        padding: 0 !important;
+                        margin: 0 !important;
+                        p{
+                            font-size: 18px;
+                            text-align: left;
+                            margin: 0  0 10px 0 !important;
+                        }
                     }
                 }
             }

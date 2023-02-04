@@ -92,10 +92,10 @@ content.onscroll = function(){
         shortactive(4)
         activeItemnav()
     }
-    else if(content.scrollTop < item[0].scrollHeight+item[1].scrollHeight+item[2].scrollHeight+item[3].scrollHeight+item[4].scrollHeight+item[5].scrollHeight){
-        shortactive(5)
-        activeItemnav()
-    }
+    // else if(content.scrollTop < item[0].scrollHeight+item[1].scrollHeight+item[2].scrollHeight+item[3].scrollHeight+item[4].scrollHeight+item[5].scrollHeight){
+    //     shortactive(5)
+    //     activeItemnav()
+    // }
 }
 
 settingsBut.forEach(e=>{
