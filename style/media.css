@@ -116,6 +116,12 @@
     width: 30% !important;
   }
 }
+@media screen and (max-width: 850px) {
+  .about .units .unit {
+    width: auto !important;
+    justify-content: right;
+  }
+}
 @media screen and (max-width: 750px) {
   .portfolio .nav h1 {
     font-size: 22px;
@@ -143,6 +149,34 @@
   .portfolio .content .item .courses .units .unit .text_hover p {
     font-size: 14px !important;
     margin-bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about p {
+    font-size: 15px !important;
+    text-align: justify !important;
+  }
+  .about .units {
+    flex-direction: column-reverse !important;
+    display: block;
+  }
+  .about .units .unit {
+    width: 100% !important;
+  }
+  .about .units .unit .twounit {
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .about .units .unit .twounit .minunit {
+    width: 40% !important;
+  }
+  .about .units .unit .twounit .minunit:nth-of-type(1) {
+    margin-bottom: 0 !important;
+  }
+  .about .units .unit .twounit .minunit p {
+    text-align: center !important;
   }
 }
 @media screen and (max-width: 655px) {
@@ -273,6 +307,21 @@
   .portfolio .content .item .skills .units .unit {
     width: 100% !important;
   }
+  .portfolio .content .item .about .head h1 {
+    font-size: 30px !important;
+  }
+  .portfolio .content .item .about .head .after, .portfolio .content .item .about .head .before {
+    width: 25px !important;
+  }
+  .portfolio .content .item .about .units .unit .twounit {
+    display: block;
+  }
+  .portfolio .content .item .about .units .unit .twounit .minunit {
+    width: 100% !important;
+  }
+  .portfolio .content .item .about .units .unit .twounit .minunit:nth-of-type(1) {
+    margin-bottom: 20px !important;
+  }
 }
 @media screen and (max-width: 350px) {
   .portfolio .content .item {
@@ -319,5 +368,19 @@
   .portfolio .content .item .skills p {
     width: 100% !important;
     font-size: 15px !important;
+  }
+  .portfolio .content .item .about p {
+    font-size: 13px !important;
+  }
+  .portfolio .content .item .about .units .unit .info p {
+    font-size: 12px !important;
+    text-align: left !important;
+  }
+  .portfolio .content .item .about .units .unit .info .socialmedia a i {
+    font-size: 25px !important;
+  }
+  .portfolio .content .item .about .units .unit .info .socialmedia a span {
+    font-size: 16px !important;
+    padding: 3px 6px !important;
   }
 }/*# sourceMappingURL=media.css.map */

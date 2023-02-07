@@ -127,6 +127,9 @@
                         margin-bottom: 50px;
                         font-size: 17px;
                         text-align: justify;
+                        a{
+                            color:white;
+                        }
                     }
                     button{
                         padding: 10px 25px;
@@ -346,19 +349,86 @@
                 }
             }
             .about{
+                .head{
+                    margin: 5 !important;
+                }
+                
+                p{
+                    text-align: justify;
+                    width: 100%;
+                    font-size: 16px ;
+                    margin-bottom: 50px !important;
+                    
+                }
                 .units{
-                    border: 1px solid blue;
                     justify-content: space-between !important;
-
                     .unit{
-                        width: 50% !important;
-                        border:1px solid yellow;
-                        padding: 0 !important;
+                        width: 50% ;
                         margin: 0 !important;
+                        display: flex;
+                        justify-content: center;
+                        &:nth-of-type(1){
+                            justify-content: start;
+                          .info{
+                                width: 100%;
+                                    a[title="cv"]{
+                                        display: inline-block;
+                                        padding: 10px 15px;
+                                        color:white;
+                                        border-radius: 10px;
+                                        margin-top: 30px;
+                                        font-size: 16px;
+                                        font-weight: bold;   
+                                    }
+                                .socialmedia{
+                                    width: 70%;
+                                    text-align: left;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 10px;
+                                    a{
+                                        color: white;
+                                        margin: 0 10px;
+                                        span{
+                                            padding: 3px 6px;
+                                            background-color:#0055d9;
+                                            font-weight: bold;
+                                            border-radius: 2px;
+                                            color: var(--mainBackgroundColorDark);
+                                            font-size: 20px;
+                                            
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                            }
+                        }
                         p{
                             font-size: 18px;
+                            width: 100%;
                             text-align: left;
-                            margin: 0  0 10px 0 !important;
+                            margin: 0  0 7px 0 !important;
+                        }
+                        .twounit{
+                            .minunit{
+                                border: 2px solid var(--OneColor);
+                                border-radius: 5px ;
+                                width: 200px;
+                                padding: 20px 10px;
+                                &:nth-of-type(1){
+                                    margin-bottom: 20px;
+                                }
+                                h1{
+                                    margin-bottom: 10px;
+                                    text-align: center ;
+                                }
+                                p{
+                                    font-size: 16px;
+                                    text-align: center;
+                                    width: 100%;
+                                }
+                            }
                         }
                     }
                 }
@@ -471,20 +541,20 @@
             background-color:var(--mainBackgroundColorLight );
             color:black;
             transform: 0.2s ease;
+            
             .nav{
                 background-color: #adadad;
                 .menu{
                     ul{
                         li{
                             border-bottom-color: #1b1b1b;
-                            a{
-                                color:black ;
-                            }
+                            
                         }
                     }
                 }
             }
             .content{
+                
                 .settings{
                     .input2{
                         label{
@@ -498,6 +568,13 @@
                     }
                 }
                 .item{
+                    .home{
+                        p{
+                            a{
+                                color:black;
+                            }
+                        }
+                    }
                     .projects{
                         .units{
                             .unit{
@@ -519,6 +596,22 @@
                             }
                         }
                     }
+                    .about{
+                        a{
+                        color: var(--mainBackgroundColorDark);
+                        }
+                        a[title="WUZZUF"] {
+                            span{
+                                color:white;
+                            }   
+                        }
+                        a[title="cv"] {
+                                color:white;
+                        }
+                        
+
+                    }
+                    
                 }
             }
             

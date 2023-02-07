@@ -135,6 +135,9 @@
   font-size: 17px;
   text-align: justify;
 }
+.portfolio .content .item .home .title p a {
+  color: white;
+}
 .portfolio .content .item .home .title button {
   padding: 10px 25px;
   border-radius: 30px;
@@ -334,20 +337,81 @@
 .portfolio .content .item .projects .units .unit:hover .text_hover, .portfolio .content .item .courses .units .unit:hover .text_hover, .portfolio .content .item .skills .units .unit:hover .text_hover, .portfolio .content .item .about .units .unit:hover .text_hover {
   opacity: 1;
 }
+.portfolio .content .item .about .head {
+  margin: 5 !important;
+}
+.portfolio .content .item .about p {
+  text-align: justify;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 50px !important;
+}
 .portfolio .content .item .about .units {
-  border: 1px solid blue;
   justify-content: space-between !important;
 }
 .portfolio .content .item .about .units .unit {
-  width: 50% !important;
-  border: 1px solid yellow;
-  padding: 0 !important;
+  width: 50%;
   margin: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+.portfolio .content .item .about .units .unit:nth-of-type(1) {
+  justify-content: start;
+}
+.portfolio .content .item .about .units .unit:nth-of-type(1) .info {
+  width: 100%;
+}
+.portfolio .content .item .about .units .unit:nth-of-type(1) .info a[title=cv] {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.portfolio .content .item .about .units .unit:nth-of-type(1) .info .socialmedia {
+  width: 70%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.portfolio .content .item .about .units .unit:nth-of-type(1) .info .socialmedia a {
+  color: white;
+  margin: 0 10px;
+}
+.portfolio .content .item .about .units .unit:nth-of-type(1) .info .socialmedia a span {
+  padding: 3px 6px;
+  background-color: #0055d9;
+  font-weight: bold;
+  border-radius: 2px;
+  color: var(--mainBackgroundColorDark);
+  font-size: 20px;
 }
 .portfolio .content .item .about .units .unit p {
   font-size: 18px;
+  width: 100%;
   text-align: left;
-  margin: 0 0 10px 0 !important;
+  margin: 0 0 7px 0 !important;
+}
+.portfolio .content .item .about .units .unit .twounit .minunit {
+  border: 2px solid var(--OneColor);
+  border-radius: 5px;
+  width: 200px;
+  padding: 20px 10px;
+}
+.portfolio .content .item .about .units .unit .twounit .minunit:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+.portfolio .content .item .about .units .unit .twounit .minunit h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.portfolio .content .item .about .units .unit .twounit .minunit p {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
 }
 .portfolio .content .item .skills .units {
   padding: 0 50px;
@@ -444,14 +508,14 @@
 #checkdark:checked ~ .portfolio .nav .menu ul li {
   border-bottom-color: #1b1b1b;
 }
-#checkdark:checked ~ .portfolio .nav .menu ul li a {
-  color: black;
-}
 #checkdark:checked ~ .portfolio .content .settings .input2 label #whiteLight {
   display: block;
 }
 #checkdark:checked ~ .portfolio .content .settings .input2 label #whitedark {
   display: none;
+}
+#checkdark:checked ~ .portfolio .content .item .home p a {
+  color: black;
 }
 #checkdark:checked ~ .portfolio .content .item .projects .units .unit {
   background-color: #e4e4e4;
@@ -461,6 +525,15 @@
 }
 #checkdark:checked ~ .portfolio .content .item .skills .units .unit {
   box-shadow: 0px 0px 5px rgba(168, 168, 168, 0.5), 0px 7px 5px rgba(168, 168, 168, 0.5);
+}
+#checkdark:checked ~ .portfolio .content .item .about a {
+  color: var(--mainBackgroundColorDark);
+}
+#checkdark:checked ~ .portfolio .content .item .about a[title=WUZZUF] span {
+  color: white;
+}
+#checkdark:checked ~ .portfolio .content .item .about a[title=cv] {
+  color: white;
 }
 
 #checkdark:not(:checked) ~ .portfolio .nav .menu ul li {
